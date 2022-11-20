@@ -1,0 +1,47 @@
+.login_BG{
+    background-image:linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.5) 100%), url('./background.jpg');
+    width: 100%;
+    height: 100vh;
+    padding-top: 30px;
+    background-size: cover;
+}
+.login_con_div{
+    margin-top:70px ;
+    border-radius: 30px;
+    background-color: rgba(0,0,0,.5);
+}
+.login_btn1{
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    margin-top: 20px;
+    /* margin-left: 150px; */
+    border-radius: 20px;
+    border: 0px;
+    font-weight: bold;
+}
+
+.login_usernamei{
+    color: violet;
+    font-weight: bold;
+}
+.login_passwordi{
+    color: violet;
+    font-weight: bold;
+}
+.login_nav{
+    border-radius: 40px;
+    width: 90vw;   
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+}
+.login_btn2{
+    padding: 10px;
+    width: 100px;
+    border-radius: 20px;
+    border: 0px;
+    font-weight: bold;
+}
+.img1{
+    width: 80px;
+}

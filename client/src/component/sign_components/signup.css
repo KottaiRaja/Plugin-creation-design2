@@ -1,0 +1,39 @@
+.BG{
+    background-image:linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.5) 100%), url('./background.jpg');
+    width: 100%;
+    height: 100vh;
+    padding-top: 20px;
+    background-size: cover;
+}
+.con_div{
+    margin-top:20px ;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,.5);
+}
+.btn1{
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 0px;
+    color: black;
+    font-weight: bold;
+}
+
+.namei{
+    color:violet;
+    font-weight: bold;
+}
+.passwordi{
+    color: violet;
+    font-weight: bold;
+}
+.emaili{
+    color: violet;
+    font-weight: bold;
+}
+.phonei{
+    color: violet;
+    font-weight: bold;
+}
