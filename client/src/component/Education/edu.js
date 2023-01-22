@@ -52,7 +52,7 @@ export default function Education() {
     <div className='content_bg'>
       <div className='container'>
         <div className='row justify-content-center'>
-          <div className='col-lg-6 edu_con col-10 text-center col-md-6 col-sm-6'>
+          <div className='col-lg-8 edu_con col-11 text-center col-md-6 col-sm-6'>
               <h3 className='text-center pt-3 text-secondary'>Education Info</h3> 
 
                 <Box

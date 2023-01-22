@@ -25,7 +25,7 @@ export default function Info() {
           .then((res)=>{
             if(res.data.status === 'Inserted'){
               alert("inserted")
-              window.location.reload()
+              window.location.href='/education'
             }else{
               alert("error")
               window.location.reload()

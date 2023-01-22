@@ -1,0 +1,10 @@
+.submit-bar{
+    background-color: rgba(255, 255, 255, 0.897);
+    width: 100%;
+    padding-top: 30px;
+    background-size: cover;
+    border-radius: 50px;
+}
+.hidden {
+    display: none;
+  }
