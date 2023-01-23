@@ -37,7 +37,7 @@ export default function Skills() {
   
       const submit=(e)=>{
             e.preventDefault();
-            let datastring = {userid:userid,ps1:pSkill1,ps2:pSkill2,ps3:pSkill3,ts1:tSkill1,ts2:tSkill2,ts3:tSkill3,Course_name:Course_name,Course_center:Course_center,pro_title:pro_title,pro_des:pro_des,select1:Lang1,select2:Lang2 , img_file:image};
+            let datastring = {userid:userid,ps1:pSkill1,ps2:pSkill2,ps3:pSkill3,ts1:tSkill1,ts2:tSkill2,ts3:tSkill3,Course_name:Course_name,Course_center:Course_center,pro_title:pro_title,pro_des:pro_des,select1:Lang1,select2:Lang2 , img_file:image[0].name};
             let config = {header:{'enctype':'multipart/form-data'}};
   
             axios.post('http://localhost:3004/othersdetail',datastring,config)
@@ -199,7 +199,7 @@ export default function Skills() {
                   autoComplete="off"
                 >
                   <div className='text-center pt-2'>  
-                  <input type="file" name="img_file" id="img_file" className="image" onChange={(e)=>setImage(e.target.value)}/>
+                  <input type="file" name="img_file" id="img_file" className="image" onChange={(e)=>setImage(e.target.files)}/>
                   </div>
                 </Box>
                 <Button variant="outlined" color='secondary' className='mb-4 mt-3' onClick={submit}>Submit</Button>

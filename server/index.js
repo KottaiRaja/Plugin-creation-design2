@@ -196,19 +196,18 @@ app.post('/othersdetail',(request,response)=>{
     let pro_des=request.body.pro_des;
     let select1=request.body.select1;
     let select2=request.body.select2;
+    let img_file=request.body.img_file;
 
-    let img_file=request.files.img_file;
-
-    let upload_path = '../client/public/images/'+img_file.name;
-    let img_name=  img_file.name;
+    let upload_path = '../client/public/images/'+img_file;
     let img_path = 'images';
+    console.log(img_file,"name")
    
-
+    console.log(userid,ps1,ps2,ps3,ts1,ts2,ts3,Course_name,Course_center,pro_title,pro_des,select1,select2,img_file,"image")
     img_file.mv(upload_path,function(err){
 
         let sql = 'insert into othersdetail(userid,ps1,ps2,ps3,ts1,ts2,ts3,Course_name,Course_center,pro_title,pro_des,select1,select2,img_path,img_name) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)';
 
-        c.query(sql,[userid,ps1,ps2,ps3,ts1,ts2,ts3,Course_name,Course_center,pro_title,pro_des,select1,select2,img_path,img_name],(err1,res)=>{
+        c.query(sql,[userid,ps1,ps2,ps3,ts1,ts2,ts3,Course_name,Course_center,pro_title,pro_des,select1,select2,img_path,img_file],(err1,res)=>{
             if(err1){let s = {"status":"error"};
             response.send(s);}
         })
